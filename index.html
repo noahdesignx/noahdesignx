@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Noah Mitchell">
+    <meta name = "description" content = "My Personal Website">
+    <title>Noah Mitchell</title>
+    <link rel = "icon" href = "images/codeLogo.png">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/d6414831a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class = "header" id = "home">
+         <div class = "nav">
+            <a href = "index.html"><img src = "images/codeLogo.png"></a>
+            <div class = "links">
+                
+                <ul>
+                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#about">About Me</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+         </div>
+
+         <div class = "title">
+
+            <p>Hey, I'm</p><br>
+            <h1>Noah Mitchell</h1><br>
+            <p>Software Developer</p>
+
+         </div>
+
+         <div class = "socials">
+
+            <a href = "https://github.com/KingNoahX07" target = "_blank"><i class = "fa fa-github"></i></a>
+            <a href = "https://www.youtube.com/@kingnoahx07/featured" target = "_blank"><i class = "fa fa-youtube"></i></a>
+            <a href = "https://www.instagram.com/kingnoahx07/" target = "_blank"><i class = "fa fa-instagram"></i></a>
+            <a href = "mailto:kingnoahx07@gmail.com"><i class = "fa fa-envelope-o"></i></a>
+            
+         </div>
+
+    </section>
+
+    <section class = "about" id = "about">
+
+        <div class = "bio">
+            <div class = "text">
+                <h1>About Me</h1>
+            <br><br>
+            <p>I specialize in developing responsive web applications and mobile apps. While most of my work is front-end development, I can also do a little bit of back-end. As of right now, the only programming languages I use are HTML, CSS, and JavaScript. </p>
+            </div>
+            
+            
+           <img src = "images/application1.png">
+           
+            
+        </div>
+
+    </section>
+
+    <section class = "projects" id = "projects">
+
+            <div class = "text">
+                <h1>Projects</h1>
+            </div>
+
+            <div class = "thumbnails">
+                <a href = "google.com"><img src = "images/thumbnail2.png"></a>
+                <a href = "scrnet.org"><img src = "images/thumbnail1.png"></a>
+                <p id="demo" class = "demo"></p>
+                
+            </div>
+        
+    </section>
+
+    <!-- Display the countdown timer in an element -->
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 30, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
