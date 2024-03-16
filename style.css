@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-height: 745px;
+    background-color: black;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.916),rgba(26, 255, 0, 0.226)), url("https://wallpapertag.com/wallpaper/full/6/6/5/116126-most-popular-real-space-wallpapers-3840x2160-for-hd-1080p.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: color 3s infinite linear alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+@keyframes color {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(100deg);
+    }
+}
+.title {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    margin: 25px;
+    font-family: sans-serif;
+}
+.title p {
+    font-size: 50px;
+}
+.title h1 {
+    font-size: 75px;
+    color: rgb(0, 255, 0);
+}
+.socials {
+    display: flex;
+    padding-left: 100px;
+    margin-top: 25px;
+}
+.socials i {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 25px;
+    transition: 0.5s;
+}
+.socials i:hover {
+    scale: 1.25;
+    color: rgb(0, 255, 0);
+    transition: 0.5s;
+}
+@media (max-width: 1000px) {
+    .header {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.916),rgba(26, 255, 0, 0.226)), url("https://wallpapertag.com/wallpaper/full/6/6/5/116126-most-popular-real-space-wallpapers-3840x2160-for-hd-1080p.jpg");
+    }
+    .title {
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .title p {
+        font-size: 20px;
+    }
+    .title h1 {
+        font-size: 45px;
+    }
+    .socials {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 25px;
+    }
+    .socials i {
+        font-size: 25px;
+        display: flexbox;
+        justify-content: space-evenly;
+        margin-right: 0px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.about {
+    background-color: black;
+    min-height: 545px;
+    display: none;
+}
+.about .bio {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 125px;
+    padding-top: 50px;
+    animation: color 3s infinite linear alternate;
+}
+.about .bio img {
+    width: 200px;
+    height: 200px;
+    margin-right: 125px;
+    margin-left: 125px;
+    animation: application alternate-reverse infinite linear 5s;
+}
+@keyframes application {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+.about .bio h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: rgb(0, 255, 0);
+    padding-top: 25px;
+}
+.about .bio p {
+    color: white;
+    font-family: serif;
+    font-size: 25px;
+ 
+}
+@media (max-width: 1000px) {
+    .about .bio {
+        display: block;
+        text-align: center;
+    }
+    .about .bio img {
+        width: 150px;
+        height: 150px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .about .bio h1 {
+        font-size: 25px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .about .bio p {
+        font-size: 16px;
+        padding-left: 0px;
+        margin: 25px;
+    }
+}
+/*Projects*/
+.projects {
+    background-color: rgb(0, 0, 0);
+    min-height: 745px;
+}
+.projects .text h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 125px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+.thumbnails {
+    display: flex;
+    justify-content: wrap;
+    padding-left: 125px;
+}
+.thumbnails img {
+    width: 400px;
+    padding-right: 50px;
+}
+@media (max-width: 1000px) {
+    .projects .text h1 {
+        text-align: center;
+        padding-left: 0px;
+        font-size: 25px;
+    }
+    .thumbnails {
+        padding-left: 0px;
+        margin: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .thumbnails img {
+        width: 20rem;
+        padding-right: 0px;
+        padding-top: 50px;
+    }
+}
+.demo {
+    margin-top: 200px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    display: none;
+}

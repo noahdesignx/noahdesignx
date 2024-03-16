@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Noah Mitchell">
+    <meta name = "description" content = "My Official Website">
+    <title>Noah Mitchell</title>
+    <link rel = "icon" href = "">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/d6414831a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class = "header">
+
+         <div class = "title">
+
+            <p>Hey, I'm</p><br>
+            <h1>Noah Mitchell</h1><br>
+            <p>Web Developer</p>
+
+         </div>
+
+         <div class = "socials">
+
+            <a href = "https://github.com/noahdesignx"><i class = "fa fa-github"></i></a>
+            <a href = "https://www.linkedin.com/in/noah-mitchell-b465042b7/"><i class = "fa fa-linkedin"></i></a>
+            <a href = "https://www.instagram.com/kingnoahx07/"><i class = "fa fa-instagram"></i></a>
+            <a href = "mailto:noah.designx@gmail.com"><i class = "fa fa-envelope-o"></i></a>
+            
+         </div>
+
+    </section>
+
+    <section class = "about">
+
+        <div class = "bio">
+            <div class = "text">
+                <h1>About Me</h1>
+            <br><br>
+            <p>Passionate self-taught web developer with one year of entry-level experience in web development. Skilled at designing
+                meaningful and visually captivating websites. Proven track work in communicating with clients and adapting to new
+                programming languages and frameworks. Eager to utilize and expand upon strong web development skills in
+                preparation to become a software engineer. </p>
+            </div>
+            
+            
+           <img src = "images/application1.png">
+           
+            
+        </div>
+
+    </section>
+
+    <section class = "projects">
+
+            <div class = "text">
+                <h1>Projects</h1>
+            </div>
+
+            <div class = "thumbnails">
+                <a href = "https://noahdesignx.github.io/audreyflores"><img src = "images/thumbnail1.png"></a>
+                <a href = "https://noahdesignx.github.io/scrnet"><img src = "images/thumbnail2.png"></a>
+                <a href = "https://noahdesignx.github.io/unlvit"><img src = "images/thumbnail3.png"></a>
+                
+            </div>
+
+            <p id="demo" class = "demo"></p>
+        
+    </section>
+
+    <!-- Display the countdown timer in an element -->
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 7, 2025 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
